@@ -1,14 +1,183 @@
 body {
-  margin: 0;
-  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background-color:whitesmoke;
+  background: -webkit-radial-gradient(center, #2ecc71, #16a085);
+  background: -moz-radial-gradient(center, #2ecc71, #16a085);
+  background: -o-radial-gradient(center, #2ecc71, #16a085);
+  background: -ms-radial-gradient(center, #2ecc71, #16a085);
+  background: radial-gradient(center, #2ecc71, #16a085);
+  background-image: url("https://i.imgur.com/Go8M3lc.png");
+  background-size: 400px;
+  background-repeat: repeat;  
+}
+.console-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2px;
+}
+#text {
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  left: 50%;
+  top: 22%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1 {
+  color:black;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 5em;
 }
+
+.slash-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+.slash-text .top,
+.slash-text .bottom {
+  text-align: center;
+  font: 62px/100px arial;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  color:#EA2953;
+}
+.slash-text .top:before,
+.slash-text .bottom:before {
+  content: attr(title);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+.slash-text .top {
+  position: absolute;
+  top: 0;
+  left: 6px;
+  right: 0;
+  bottom: 85%;
+}
+.slash-text .top:before {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+}
+.slash-text .bottom {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 6px;
+  bottom: 0;
+
+}
+.slash-text .bottom:before {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 45vh;
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 10em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+#links nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+}
+.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45em;
+  border: 3px black dashed;
+  padding: 1em;
+}
+#info {
+  height: 25em;
+  /* border: 3px blue dashed; */
+}
+#project {
+  /* height: 15em; */
+  border: 3px #EA2953 solid;
+}
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+p, h1, h2, h3, h4 {
+  /* font-family: 'Indie Flower', cursive; */
+  font-weight: bold;
+  text-indent: 2em;
+}
+
+:root {
+  --mainColor: black;
+}
+
+a {
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23EA2953' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  color: #black;
+}
+
+.orange {
+  color: #EA2953;
+}
+
+
