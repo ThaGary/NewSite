@@ -14,6 +14,7 @@ const SocialMedia = () => {
                         <a className="nav-link text-dark" href="https://thagary.com/steam" target="_blank" rel="noopener noreferrer" ><i className="fab fa-2x orange fa-steam-square" ></i> Steam</a>
                         <a className="nav-link text-dark" href="https://thagary.com/instagram" target="_blank" rel="noopener noreferrer" ><i className="fab fa-2x orange fa-instagram" ></i> Instagram</a>
                         <a className="nav-link text-dark" href="https://thagary.com/twitch" target="_blank" rel="noopener noreferrer" ><i className="fab fa-2x orange fa-twitch" ></i> Twitch</a>
+                        <a className="nav-link text-dark" href="google.com" target="_blank" rel="noopener noreferrer" ><i className="fas fa-2x orange fa-file-code" ></i> Projects</a>
                     </nav>
                 </div>  
         </>

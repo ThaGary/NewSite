@@ -3,7 +3,7 @@ import SocialMedia from './SocialMedia';
 
 const Content = (props) => {
     return ( 
-        <div class="container">
+        <div className="container">
             <SocialMedia />
             <div>
                 <h1 className="orange">Gary Anderson</h1>
