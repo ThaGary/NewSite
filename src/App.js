@@ -9,20 +9,33 @@ import Projects from './components/Projects.js';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = false;
+    this.state = {
+      projects: false
+    }
   }
-
-  // get state to change between true and false when project link is clicked and have a ternery to display projects instead of content if true
   
   render() {
+    
+const handleClick = (e) => {
+        e.preventDefault();
+        if (this.state.projects === false) {
+          this.setState({
+            projects: true
+          })
+        } else {
+          this.setState({
+            projects: false
+          })
+        }
+      }
 
+      // this.handleClick.bind(this)
     return ( 
       <>
         <Snow />
-        <Content />
-        <Projects />
+        {this.state.projects === false ? <Content handleClick={handleClick} /> : <Projects handleClick={handleClick}/>}
       </>
-    );
+    )
   }
 }
 

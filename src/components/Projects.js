@@ -1,6 +1,6 @@
 import React from "react";
 
-const Projects = () => {
+const Projects = (props) => {
   return (
     <>
       <div className="container">
@@ -10,10 +10,7 @@ const Projects = () => {
           <div className="projects">
             {/* 1st project */}
             <div className="col-xs-12 col-sm-6 col-md-4">
-              <div
-                className="image-flip"
-                ontouchstart="this.classNameList.toggle('hover');"
-              >
+              <div className="image-flip" onTouchStart="this.classNameList.toggle('hover');">
                 <div className="mainflip">
                   <div className="frontside">
                     <div className="card">
@@ -33,7 +30,7 @@ const Projects = () => {
                       <div className="card-body text-center mt-4">
                         <h4 className="card-title">Pixel Art</h4>
                         <p className="card-text">
-                          This project uses HTML, CSS, JavaScript.
+                          This project generates a table that lets you changes the background of individual tiles based on what color you have selected.
                         </p>
                         <ul className="list-inline">
                           <li className="list-inline-item">
@@ -63,19 +60,15 @@ const Projects = () => {
             </div>
             {/* 2nd project */}
             <div className="col-xs-12 col-sm-6 col-md-4">
-              <div
-                className="image-flip"
-                ontouchstart="this.classNameList.toggle('hover');"
-              >
+              <div className="image-flip" ontouchstart="this.classNameList.toggle('hover');">
                 <div className="mainflip">
                   <div className="frontside">
                     <div className="card">
                       <div className="card-body text-center">
                         <p>
-                          <img className=" img-fluid" src="https://github.com/ThaGary/pixel-art-maker/raw/master/pixel-art-maker-alt.png" alt="card" />
+                          <img className=" img-fluid" src="https://i.snag.gy/LzWfQr.jpg" alt="card" />
                         </p>
-                        <h4 className="card-title">Movies</h4>
-                        <span className="badge badge-success">Node</span>
+                        <h4 className="card-title">React Shopping Cart</h4>
                         <span className="badge badge-primary">React</span>
                         <span className="badge badge-warning">JavaScript</span>
                       </div>
@@ -84,16 +77,16 @@ const Projects = () => {
                   <div className="backside">
                     <div className="card">
                       <div className="card-body text-center mt-4">
-                        <h4 className="card-title">Movies</h4>
+                        <h4 className="card-title">React Shopping Cart</h4>
                         <p className="card-text">
-                          This project uses HTML, CSS, JavaScript.
+                          This project displays a shopping chart with the correct item info, prices, quantity, tax, and grand total.
                         </p>
                         <ul className="list-inline">
                           <li className="list-inline-item">
                             <a
                               className="social-icon text-xs-center"
-                              target="_blank"
-                              href="google.com"
+                              target="_blank" rel="noopener noreferrer"
+                              href="https://github.com/ThaGary/Shopping-Cart"
                             >
                               <i className="fa fa-github" />
                             </a>
@@ -116,10 +109,7 @@ const Projects = () => {
             </div>
             {/* 3rd project */}
             <div className="col-xs-12 col-sm-6 col-md-4">
-              <div
-                className="image-flip"
-                ontouchstart="this.classNameList.toggle('hover');"
-              >
+              <div className="image-flip" ontouchstart="this.classNameList.toggle('hover');">
                 <div className="mainflip">
                   <div className="frontside">
                     <div className="card">
@@ -167,7 +157,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          </div><button className="btn btn-outline-danger gobackbtn">return home</button>
+          </div><button onClick={props.handleClick} className="btn btn-outline-danger gobackbtn">return home</button>
         </div>
       </div>
     </>
