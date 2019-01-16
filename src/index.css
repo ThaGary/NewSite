@@ -4,7 +4,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
-  background-color: lightgray;
   background: -webkit-radial-gradient(center, #2ecc71, #16a085);
   background: -moz-radial-gradient(center, #2ecc71, #16a085);
   background: -o-radial-gradient(center, #2ecc71, #16a085);
@@ -13,6 +12,7 @@ body {
   background-image: url("");
   background-repeat: repeat;
   width: 100vw;
+  overflow: hidden;
 }
 .console-container {
   width: 100%;
@@ -37,8 +37,9 @@ h1 {
   font-size: 5em;
   text-align: center;
 }
-h2 {
-  font-size: 4em;
+h4 {
+  font-size: 1em;
+  margin-top: 1em;
   margin-right: 2em;
   text-align: center;
 }
@@ -63,7 +64,7 @@ img {
   align-items: center;
   margin-top: 10em;
   width: 52em;
-  border-radius: 3em;
+  box-shadow: 0px 0px 0px 3px black;
   background-color: whitesmoke;
 }
 #links {
@@ -174,54 +175,6 @@ a:hover {
     width: 28%;
     display: none;
   }
-}
-.winter-is-coming,
-.snow {
-  z-index: -100;
-  pointer-events: none;
-}
-.winter-is-coming {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  background: lightgray;
-}
-.snow {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  animation: falling linear infinite both;
-  transform: translate3D(0, -100%, 0);
-}
-.snow--near {
-  animation-duration: 10s;
-  background-image: url('https://i.imgur.com/4RQhfZd.png');
-  background-size: contain;
-}
-.snow--near+.snow--alt {
-  animation-delay: 5s;
-}
-.snow--mid {
-  animation-duration: 20s;
-  background-image: url('https://i.imgur.com/3c1zYqW.png');
-  background-size: contain;
-}
-.snow--mid+.snow--alt {
-  animation-delay: 10s;
-}
-.snow--far {
-  animation-duration: 30s;
-  transform: rotate(90deg);
-  background-image: url('https://i.imgur.com/3c1zYqW.png');
-  background-size: contain;
-}
-.snow--far+.snow--alt {
-  animation-delay: 15s;
 }
 @keyframes falling {
   0% {
@@ -346,4 +299,15 @@ span {
 }
 .card-text {
   text-align: left;
+}
+.nav-link {
+  cursor: pointer;
+}
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+  z-index: -100;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
