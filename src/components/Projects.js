@@ -42,16 +42,6 @@ const Projects = (props) => {
                               <i className="fa fa-github" />
                             </a>
                           </li>
-                          <li className="list-inline-item">
-                            <a
-                              className="social-icon text-xs-center"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              href="google.com"
-                            >
-                              <i className="fa fa-link" />
-                            </a>
-                          </li>
                         </ul>
                       </div>
                     </div>
@@ -89,7 +79,7 @@ const Projects = (props) => {
                               target="_blank" rel="noopener noreferrer"
                               href="https://github.com/ThaGary/HereForTrebleBackend"
                             >
-                              <i className="fa fa-github" /> Github
+                              <i className="fa fa-github" />
                             </a> 
                           </li>
                           <li className="list-inline-item">
@@ -99,7 +89,7 @@ const Projects = (props) => {
                               rel="noopener noreferrer"
                               href="https://herefortreble.surge.sh/"
                             >
-                              <i className="fa fa-link" /> Deployed Link
+                              <i className="fa fa-link" />
                             </a> 
                           </li>
                         </ul>
@@ -117,12 +107,12 @@ const Projects = (props) => {
                     <div className="card">
                       <div className="card-body text-center">
                         <p>
-                          <img className=" img-fluid" src="https://github.com/ThaGary/pixel-art-maker/raw/master/pixel-art-maker-alt.png" alt="card" />
+                          <img className=" img-fluid" src="https://i.imgur.com/LoIHkVa.png" alt="card" />
                         </p>
                         <h4 className="card-title">Capstone</h4>
-                        <span className="badge badge-success">Vue Native</span>
-                        <span className="badge badge-primary">MongoDB</span>
-                        <span className="badge badge-warning">JavaScript</span>
+                        <span className="badge badge-success">Vue</span>
+                        <span className="badge badge-primary">Socket.io</span>
+                        <span className="badge badge-warning">Node</span>
                       </div>
                     </div>
                   </div>
@@ -131,25 +121,17 @@ const Projects = (props) => {
                       <div className="card-body text-center mt-4">
                         <h4 className="card-title">Capstone</h4>
                         <p className="card-text">
-                          COMING SOON!
+                          RoomEase is an app the tracks house bills for multiple roommates. 10 day project to prove i can learn a new technology.
                         </p>
                         <ul className="list-inline">
                           <li className="list-inline-item">
                             <a
                               className="social-icon text-xs-center"
                               target="_blank"
-                              href="google.com"
+                              rel="noopener noreferrer"
+                              href="https://github.com/ThaGary/CapstoneFrontend"
                             >
                               <i className="fa fa-github" />
-                            </a>
-                          </li>
-                          <li className="list-inline-item">
-                            <a
-                              className="social-icon text-xs-center"
-                              target="_blank"
-                              href="google.com"
-                            >
-                              <i className="fa fa-link" />
                             </a>
                           </li>
                         </ul>
