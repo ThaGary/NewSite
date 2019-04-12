@@ -1,5 +1,5 @@
 .nav {
-    height: 10em;
+    height: 5em;
     width: 100vw;
 }
 .nav__links {
@@ -13,13 +13,14 @@
     padding-left: 8%;
     text-decoration: none;
     font-family: 'Asap', sans-serif;
-    font-size: 1.5em;
+    font-style: bold;
+    font-size: .9em;
     color: black;
 }
 .nav__line {
     margin-left: -10%;
     height: .5em;
-    width: 60%;
+    width: 55%;
     background-color: black;
     border-radius: 10px;
     animation: nav__line__animation 1s 0s ease-out;
