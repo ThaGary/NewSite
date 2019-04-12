@@ -7,17 +7,31 @@
     justify-content: start;
     align-items: center;
     left: 0%;
-    font-size: 1em;
     width: 100%;
 }
 .nav__links a {
-    padding-left: 5%;
+    padding-left: 8%;
+    text-decoration: none;
+    font-family: 'Asap', sans-serif;
+    font-size: 1.5em;
+    color: black;
 }
 .nav__line {
     margin-left: -10%;
     height: .5em;
-    width: 50vw;
+    width: 60%;
     background-color: black;
     border-radius: 10px;
+    animation: nav__line__animation 1s 0s ease-out;
+}
 
+@keyframes nav__line__animation{
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+        }
+    100%{
+        transform: translateX(1px);
+        opacity: 1;
+        }
 }

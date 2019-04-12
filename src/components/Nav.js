@@ -6,7 +6,7 @@ const Nav = (props) => {
         <div className="nav">
             <div className="nav__links">
                 <a href="google.com">Home </a>
-                <a href="google.com">Journey </a>
+                <a href="google.com">Life </a>
                 <a href="google.com">Contact </a>
             </div>
             <div className="nav__line"></div>
