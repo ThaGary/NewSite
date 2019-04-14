@@ -1,0 +1,63 @@
+.technologies {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.technologies__title {
+    padding-left: 8%;
+    text-decoration: none;
+    font-family: 'Asap', sans-serif;
+    font-size: 1.5em;
+    padding-bottom: .5em;
+    color: black;
+    display: grid;
+    place-items: center;
+    justify-content: left;
+}
+.technologies__subtitle {
+    padding-left: 8%;
+    padding-top: 2%;
+    text-decoration: none;
+    font-family: 'Asap', sans-serif;
+    font-size: 1em;
+    padding-bottom: .5em;
+    color: grey;
+    display: grid;
+    place-items: center;
+    justify-content: left;
+}
+.technologies__line {
+    margin-left: -10px;
+    height: .4em;
+    width: 45%;
+    background-color: black;
+    border-radius: 10px;
+    animation: technologies__line__animation 1s 0s ease-out;
+}
+.techbox {
+    display: flex;
+    align-content: space-between;
+    justify-content: center; 
+    margin: auto;
+    width: 80%;
+    animation: logo_animation 1s ease-in;
+}
+
+@keyframes technologies__line__animation{
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+        }
+    100%{
+        transform: translateX(1px);
+        opacity: 1;
+        }
+}
+@keyframes logo_animation{
+    0%{
+        opacity: 0;
+        }
+    100%{
+        opacity: 1;
+        }
+}

@@ -8,18 +8,19 @@
     align-items: center;
     left: 0%;
     width: 100%;
+    animation: link__animation 2s ease-in;
+    animation-fill-mode: forwards;
 }
 .nav__links a {
     padding-left: 8%;
     text-decoration: none;
     font-family: 'Asap', sans-serif;
-    font-style: bold;
     font-size: .9em;
     color: black;
 }
 .nav__line {
     margin-left: -10%;
-    height: .5em;
+    height: .4em;
     width: 55%;
     background-color: black;
     border-radius: 10px;
@@ -33,6 +34,17 @@
         }
     100%{
         transform: translateX(1px);
+        opacity: 1;
+        }
+}
+@keyframes link__animation{
+    0%{
+        opacity: 0;
+        }
+    50%{
+        opacity: 0;
+        }
+    100%{
         opacity: 1;
         }
 }
