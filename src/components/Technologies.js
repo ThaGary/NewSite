@@ -18,11 +18,11 @@ const Technologies = (props) => {
                 <div className="techbox">
                     <ReactSVG />
                     <VueSVG />
+                    <JavaScriptSVG />
+                    <CSSSVG />
+                    <HTMLSVG />
                     <NodejsSVG />
                     <ExpressSVG />
-                    <HTMLSVG />
-                    <CSSSVG />
-                    <JavaScriptSVG />
                 </div>
             </div>
         </div>

@@ -1,0 +1,15 @@
+.BioContent {
+    margin: auto;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timeline_line {
+    margin: auto;
+    display: flex;
+    background-color: black;
+    width: .5%;
+    height: 1000px;
+    border-radius: 10px;
+}
